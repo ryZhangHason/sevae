@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sevae"
+version = "1.0.2"
+description = "Structural Equation–VAE (SE-VAE) for interpretable disentangled latents on tabular data (PyTorch)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{name = "Ruiyu Zhang", email = "ruiyuzh@connect.hku.hk"}]
+keywords = [
+  "vae", "disentanglement", "representation-learning",
+  "pytorch", "tabular-data", "sem", "structural-equation-modeling"
+]
+
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: End Users/Desktop",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Sociology",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Scientific/Engineering :: Visualization",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+  "Topic :: Scientific/Engineering :: Image Recognition",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Utilities",
+  "Topic :: Database",
+  "Operating System :: OS Independent",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX",
+  "Operating System :: Unix",
+]
+
+dependencies = [
+  "numpy>=1.22",
+  "scikit-learn>=1.1",
+  "tqdm>=4.65",
+  "typing-extensions>=4.5"
+]
+
+[project.optional-dependencies]
+dev = ["ruff", "black", "pytest", "pytest-cov", "pre-commit"]
+docs = ["mkdocs-material", "mkdocstrings[python]"]
+torch = ["torch>=2.2"]  # optional extra
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sevae"]
