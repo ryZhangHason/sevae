@@ -183,7 +183,7 @@ If you used bind_column_groups or bind_feature_names, the model stores index ten
 If you use this package, please cite:
 
 Zhang, R., Zhao, C., Zhao, X., Nie, L., & Lam, W. F. (2025). Structural Equation-VAE: Disentangled Latent Representations for Tabular Data. arXiv preprint arXiv:2508.06347.
-```bash
+```bibtex
 @article{zhang2025structural,
   title={Structural Equation-VAE: Disentangled Latent Representations for Tabular Data},
   author={Zhang, Ruiyu and Zhao, Ce and Zhao, Xin and Nie, Lin and Lam, Wai-Fung},
