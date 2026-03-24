@@ -1,5 +1,9 @@
 # SEVAE: Structural Equation–Variational Autoencoder
 
+[![PyPI version](https://img.shields.io/pypi/v/sevae?logo=pypi&logoColor=white)](https://pypi.org/project/sevae/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sevae?logo=python&logoColor=white)](https://pypi.org/project/sevae/)
+[![arXiv](https://img.shields.io/badge/arXiv-2508.06347-b31b1b.svg?logo=arxiv&logoColor=white)](https://doi.org/10.48550/arXiv.2508.06347)
+
 Interpretable, disentangled latents for tabular data via a theory-driven architecture. SE-VAE mirrors structural-equation modeling (SEM): each **construct** has its own encoder/decoder block, plus an optional **nuisance** latent and **global cross-talk** context.
 
 ![SEVAE architecture](https://ryzhanghason.github.io/images/SE-VAE_Architecture_F1.png)
@@ -182,7 +186,7 @@ If you used bind_column_groups or bind_feature_names, the model stores index ten
 
 If you use this package, please cite:
 
-Zhang, R., Zhao, C., Zhao, X., Nie, L., & Lam, W. F. (2025). Structural Equation-VAE: Disentangled Latent Representations for Tabular Data. arXiv preprint arXiv:2508.06347.
+Zhang, R., Zhao, C., Zhao, X., Nie, L., & Lam, W. F. (2025). Structural Equation-VAE: Disentangled Latent Representations for Tabular Data. arXiv preprint arXiv:2508.06347. https://doi.org/10.48550/arXiv.2508.06347
 ```bibtex
 @article{zhang2025structural,
   title={Structural Equation-VAE: Disentangled Latent Representations for Tabular Data},
